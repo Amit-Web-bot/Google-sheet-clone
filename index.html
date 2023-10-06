@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet</title>
+    <link type="image/png" sizes="16x16" rel="icon" href="icons8-sheets-16.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+<div class="overlay">
+    <div class="head">
+    <!-- Main Header  -->
+    <div class="menu">
+        <div>File</div>
+        <div>Home</div>
+        <div>Insert</div>
+        <div>Layout</div>
+        <div>Help</div>
+    </div>
+
+    <!-- options -->
+    <div id="option">
+        <div>
+            <span class="material-icons">content_copy</span>
+            <span class="material-icons">content_cut</span>
+            <span class="material-icons">content_paste</span>
+            <div class="fontType">
+                <select name="font-type" id="font-type">
+                    <option value="Mono Space"> Mono Space</option>
+                    <option value="Sans Serif"> Sans Serif</option>
+                    <option value="Italic">Italic</option>
+                </select>
+            </div>
+            <div class="font-size">
+                <select onselect="changeFontSize(this)" name="font-size" id="font-size">
+                    <option class="font-size" value="14">14</option>
+                    <option class="font-size" value="15">15</option>
+                    <option class="font-size" value="16">16</option>
+                </select>
+            </div>
+            <div id="bold" onclick="contentBold(this)">B</div>
+            <div id = "italic" onclick="contentItalic(this)">I</div>
+            <div id="underline" onclick="contentUnder(this)">U</div>
+            <span class="material-icons text-align"  data-value="left" onclick="onClickTextAlign(this)">format_align_left</span>
+            <span class="material-icons text-align" data-value="center" onclick="onClickTextAlign(this)">format_align_center</span>
+            <span class="material-icons text-align" data-value="right" onclick="onClickTextAlign(this)">format_align_right</span>
+
+            <div id="text-color">
+                <label for="color-picker">
+                    <span class="material-icons">
+                        format_color_text
+                        </span>
+                </label>
+                <input onchange="onChangeTextColor(this)" type="color" id="color-picker" style="width: 0;height: 0;">
+            </div>
+            <div id="bg-color">
+                <label for="bgcolor-picker">
+                    <span class="material-icons">
+                        format_color_fill
+                        </span>
+                </label>
+                <input onchange="onChangeBGColor(this)" type="color" id="bgcolor-picker" style="width: 0; height: 0;">
+            </div>
+            <span class="material-icons">cloud_upload</span>
+            <span class="material-icons">cloud_download</span>
+        </div>
+    </div>
+     <!-- formulae bar -->
+     <div class="formula">
+        <div id="active-cell">
+        </div>
+        <div id="bar">
+            <span class="material-icons">functions</span>
+            <input type="text">
+        </div>
+
+    </div>
+        <!-- coloumn header -->
+        <div id="cl_hdr">
+            <b class="slno"></b>
+        </div>
+    </div>
+    <section id="grid">
+
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+</html> 
