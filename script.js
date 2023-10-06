@@ -165,3 +165,11 @@ function changeFontSize(buttonref){
         activeOptionsState.fontSize = selectedSize;
     }
 }
+
+function changeFontStyle(buttonref){
+    let selectedStyle = buttonref.value;
+    if(activeCell){
+        activeCell.style.fontFamily = selectedStyle;
+        activeOptionsState.fontFamily = selectedStyle;
+    }
+}

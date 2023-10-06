@@ -27,17 +27,19 @@
             <span class="material-icons">content_cut</span>
             <span class="material-icons">content_paste</span>
             <div class="fontType">
-                <select name="font-type" id="font-type">
-                    <option value="Mono Space"> Mono Space</option>
-                    <option value="Sans Serif"> Sans Serif</option>
-                    <option value="Italic">Italic</option>
+                <select onchange="changeFontFamily(this)" name="font-type" id="font-type">
+                    <option value="Times">Times New Roman</option>
+                    <option value="monospace"> Mono Space</option>
+                    <option value="sans"> Sans Serif</option>
+                    <option value="sans-serif"> Sans Serif</option>
+                    
                 </select>
             </div>
             <div class="font-size">
-                <select onselect="changeFontSize(this)" name="font-size" id="font-size">
-                    <option class="font-size" value="14">14</option>
-                    <option class="font-size" value="15">15</option>
+                <select onchange="changeFontSize(this)" name="font-size" id="font-size">
                     <option class="font-size" value="16">16</option>
+                    <option class="font-size" value="17">17</option>
+                    <option class="font-size" value="18">18</option>
                 </select>
             </div>
             <div id="bold" onclick="contentBold(this)">B</div>
