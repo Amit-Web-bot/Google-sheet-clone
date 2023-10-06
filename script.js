@@ -166,7 +166,7 @@ function changeFontSize(buttonref){
     }
 }
 
-function changeFontStyle(buttonref){
+function changeFontFamily(buttonref){
     let selectedStyle = buttonref.value;
     if(activeCell){
         activeCell.style.fontFamily = selectedStyle;
