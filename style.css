@@ -43,6 +43,7 @@
     overflow-y: scroll;
     overflow-x: scroll;
     min-width: 100px;
+    max-width: 100px;
     border: 1px solid #dfe4e9   
 }
 .row>div:focus{
