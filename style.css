@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
 }
-.row::-webkit-scrollbar {
+.row>div::-webkit-scrollbar {
     display: none;
 }
 .head{
