@@ -2,6 +2,12 @@
     padding: 0px;
     margin: 0px;
 }
+.row::-webkit-scrollbar {
+    display: none;
+}
+.row {
+    overflow: hidden
+}
 .head{
     position: sticky;
     top: 0px;
