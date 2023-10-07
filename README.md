@@ -14,3 +14,7 @@ Current feature :
 3) Underline : Can make the data in the selected cell Underlined 
 4) Text Align: Can change the alingment of the text of a cell
 
+In Last commit functionality added : 
+1) Font Size change option
+2) Font Family change option 
+
